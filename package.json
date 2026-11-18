@@ -1,7 +1,7 @@
 {
     "name": "@domain-first/handlers-svelte",
     "description": "SvelteKit Adapters for @domain-first/handlers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "type": "module",
     "exports": {
