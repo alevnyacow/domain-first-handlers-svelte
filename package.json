@@ -1,0 +1,61 @@
+{
+    "name": "@domain-first/handlers-svelte",
+    "description": "SvelteKit Adapters for @domain-first/handlers and +server endpoints",
+    "version": "0.0.1",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "types": "./dist/index.d.ts",
+    "keywords": [
+        "svelte",
+        "sveltekit",
+        "adapter",
+        "domain-first"
+    ],
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alevnyacow/domain-first-handlers-svelte.git"
+    },
+    "scripts": {
+        "build": "rslib",
+        "check": "biome check --write",
+        "dev": "rslib --watch",
+        "format": "biome format --write",
+        "test": "rstest",
+        "test:watch": "rstest --watch"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.4.2",
+        "@domain-first/handlers": "^5.0.4",
+        "@domain-first/handlers-rest": "^9.2.0",
+        "@rslib/core": "^1.0.7",
+        "@rstest/adapter-rslib": "^0.12.6",
+        "@rstest/core": "^0.12.6",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/npm": "^13.2.0",
+        "@standard-schema/spec": "^1.1.0",
+        "@sveltejs/kit": "^3.3.1",
+        "@types/node": "^24.19.2",
+        "semantic-release": "^25.0.9",
+        "svelte": "^5.58.0",
+        "typescript": "^6.0.3",
+        "vite": "^8.3.8"
+    },
+    "peerDependencies": {
+        "@sveltejs/kit": ">=2 <4"
+    }
+}
