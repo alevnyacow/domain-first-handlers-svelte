@@ -39,6 +39,7 @@ export const svelteAdapter: Adapter<[event: RequestEvent], Response> = {
         formData: (x) => x.request.formData(),
         headers: (x) => Object.fromEntries(x.request.headers.entries())
     },
+
     output: (x, event) => {
         if (x.success) {
             if (x.cookies) {
